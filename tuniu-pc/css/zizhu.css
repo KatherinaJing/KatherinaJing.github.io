@@ -1,0 +1,320 @@
+.banners{
+	min-width: 1190px;
+	height: 419px;
+	background-image: url(../img/index/toutu.jpg);
+	margin-bottom: 46px;
+}
+.banner{
+	width: 1190px;
+	height: 440px;
+}
+.banner-top{
+	height: 53px;
+	background-color: #fff;
+}
+.self{
+	margin-left: 10px;
+}
+.some{
+	width: 644px;
+	height: 30px;
+	margin-right: 27px;
+}
+.some div{
+	margin-top: 21px;
+}
+.agree{
+	width: 90px;
+	height: 30px;
+	
+}
+.focus{
+	width: 150px;
+	height: 30px;
+}
+.comment{
+	width: 145px;
+	height: 30px;
+}
+.some .grayline{
+	width: 18px;
+	height: 30px;
+	margin-top: 16px;
+}
+.color{
+	color: #ff8800;
+}
+.some .big{
+	font-size: 18px;
+}
+.some .icon{
+	margin-top: 19px;
+}
+.banner-left{
+	width: 190px;
+	height: 366px;
+	background-color: #595959;
+	opacity: .95;
+}
+.banner-left li{
+	width: 164px;
+	height: 62px;
+	padding: 5px 11px 6px 15px;	
+}
+.banner-left a:hover{
+	color: #f68b55;
+}
+.banner-left .one{
+	height: 22px;
+	line-height: 22px;
+}
+.banner-left a{
+	color: #bbb;
+}
+.better{
+	color: white;
+}
+.two{
+	height: 20px;
+	line-height: 20px;
+}
+.banner-center{
+	width: 741px;
+	height: 366px;
+	margin-left: 9px;
+	margin-right: 2px;
+}
+.top-banner{
+	width: 741px;
+	height: 182px;
+}
+.down-banner{
+	width: 741px;
+	height: 181px;
+	margin-top: 3px;
+}
+.banner-right{
+	width: 247px;
+	height: 366px;
+}
+.main-body{
+	min-width: 1210px;
+}
+.body1{
+	width: 1210px;
+	height: 526px;
+}
+.body-top{
+	width: 1190px;
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 2px solid #666666;
+	margin-left: 20px;
+}
+.body-top a{
+	font-size: 14px;
+}
+.main-body h2{
+	font-size: 20px;
+	width: 250px;
+	height: 35px;
+	line-height: 35px;
+}
+.inner li{
+	float: left;
+	padding: 0 15px;
+}
+.inner li:hover{
+	background-color: #555;
+	border-radius: 2px;
+}
+.inner a:hover{
+	color: #fff;
+}
+.body-box{
+	width: 1210px;
+	height: 490px;
+}
+.box-left{
+	width: 220px;
+	height: 490px;
+	position: relative;
+}
+.more a{
+	font-size: 12px;
+	color: #999999;
+}
+.guanzhu{
+	position: absolute;
+	top: 20px;
+	left: 40px;
+	width: 160px;
+	height: 270px;
+}
+.body-box dl{
+	width: 140px;
+	height: 21px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	background-color: #f4fafe;
+	padding: 14px 10px 0;
+}
+.box-left img{
+	margin-top: 2px;
+	margin-right: 1px;
+}
+.box-right{
+	width: 990px;
+	height: 490px;
+}
+.box-right ul{
+	width: 970px;
+	height: 490px;
+	margin-left: 20px;
+}
+.box-right li{
+	float: left;
+	width: 220px;
+	height: 215px;
+	margin: 20px 20px 0 0;
+	border: 1px solid #f0f0f0;
+}
+.body-box strong{
+	font-size: 16px;
+}
+.money{
+	width: 190px;
+	height: 66px;
+	margin: 11px 15px 13px ;
+}
+.money-top{
+	height: 16px;
+	margin-bottom: 11px;
+}
+.money-down{
+	height: 40px;
+	line-height: 20px;
+}
+.body2{
+	width: 1210px;
+	height: 526px;
+	margin-top: 41px;
+}
+.hot{
+	width: 1190px;
+	height: 276px;
+	margin-left: 20px;
+	margin-top: 36px;
+}
+.hot-top{
+	width: 1190px;
+	height: 34px;
+	border-bottom: 2px solid #666666;
+}
+.hot-down{
+	width: 1190px;
+	height: 240px;
+	background-color: #f5f5f5;
+}
+.hot-left{
+	width: 660px;
+	height: 240px;
+}
+.hot-left li{
+	float: left;
+	width: 200px;
+	height: 200px;
+	margin: 19px 0 19px 18px;
+	border: 1px solid #eaeaea;
+}
+.block{
+	width: 170px;
+	height: 70px;
+	margin: 11px 15px 3px;
+}
+.hot strong{
+	font-size: 16px;
+}
+.block-top{
+	height:16px;
+	margin-bottom: 11px;
+}
+.block-down{
+	height:40px;
+	line-height: 20px;
+}
+.hot-right{
+	width: 530px;
+	height: 240px;
+}
+.hot-right li{
+	width: 490px;
+	height: 90px;
+	padding: 20px 20px 0 20px;
+}
+.block1{
+	width: 290px;
+	height: 82px;
+	background-color: #fff;
+	padding: 8px 20px 0;
+}
+.block1-top{
+	width: 290px;
+	height: 16px;
+	margin-bottom: 11px;
+}
+
+.block1-down{
+	height: 40px;
+	line-height: 20px;
+}
+.game{
+	width: 1192px;
+	height: 357px;
+	margin-top: 11px;
+	margin-left: 19px;
+	margin-bottom: 10px;
+}
+.game-top{
+	width: 1192px;
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 1px solid #666666;
+}
+.game-top h2{
+	margin-left: 1px;
+}
+.game-downs{
+	width: 1190px;
+	height: 320px;
+	border: 1px solid #e5e5e5;
+	border-top-width: 0;
+}
+.border{
+	width: 1190px;
+	height: 1px;
+	background-color: #666666;
+}
+.game-right{
+	width: 956px;
+	height: 280px;
+	margin: 20px 0 20px 34px;
+}
+.game-right li{
+	float: left;
+	width: 210px;
+	height: 280px;
+	margin-right: 29px;
+	background-color: #f7f7f7;
+}
+.down-center{
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	margin: 7px 28px 0 15px;
+}
+.down-down{
+	height: 40px;
+	line-height: 20px;
+	margin: 0 28px 19px 15px;
+}

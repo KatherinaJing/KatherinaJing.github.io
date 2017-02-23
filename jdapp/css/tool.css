@@ -1,0 +1,22 @@
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearFix:after{
+	content: "";clear: both;display: block;
+}
+.red{
+	color: #d31320;
+}
+a{
+	text-decoration: none;
+	/*清除点击链接和文本框对象时默认的灰色半透明覆盖层(iOS)或者虚框(Android)*/
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+input{
+	-webkit-tap-highlight-color:transparent;
+	-webkit-appearance: none;
+	/*消除输入框和按钮的原生外观，在iOS上加上这个属性才能给按钮和输入框自定义样式*/ 
+}

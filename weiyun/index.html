@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微云网页版 by 景黎明</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	</head>				
+	<body>
+		<div id="container">
+			<!--头部-->
+			<div id="header">
+				<a href="javascript:;" class="header-logo">微云</a>
+				<div class="header-info">
+					<a href="javascript:;" class="about-project">项目总结</a>
+				</div>
+			</div>
+			<!--内容区域-->
+			<div id="content">
+				<!--左侧导航-->
+				<div id="left-bar">
+					<div id="upload-btn">
+						<span>+</span><span>上传</span>
+						<input type="file" id="upload-file" value="上传">
+					</div>
+					<ul id="nav-box">
+                      	<li class="nav-list  nav-actvie">
+                       		<a class="link all" href="javascript:;" title="目录"><i></i>目录</a>
+                        </li>
+                        <li class="nav-list">
+                        	<a class="link recent" href="javascript:;" title="最近"><i></i>最近</a>
+                        </li>
+                        <li class="nav-line"></li>
+                        <li class="nav-list">
+                            <a class="link doc" href="javascript:;" title="文档"><i></i>文档</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link pic" href="javascript:;" title="图片"><i></i>图片</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link audio" href="javascript:;" title="音乐"><i></i>音乐</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link video" href="javascript:;" title="视频"><i></i>视频</a>
+                        </li>
+                        <li class="nav-list">
+                            <a class="link note" href="javascript:;" title="笔记"><i></i>笔记</a>
+                        </li>
+                        <li class="nav-line"></li>
+                        <li class="nav-list">
+                        	<a class="link clip" href="javascript:;" title="剪贴板"><i></i>剪贴板</a>
+                        </li>
+                        <li class="nav-line"></li>
+                        <li class="nav-list">
+                        	<a class="link share" href="javascript:;" title="分享的链接"><i></i>分享的链接</a>
+                        </li>
+                        <li class="nav-list">
+                        	<a class="link recycle" href="javascript:;" title="回收站"><i></i>回收站</a>
+                        </li>
+                    </ul>
+				</div>
+				<!--右侧显示文件区域-->
+				<div id="main" class="main-list">
+					<!--右侧主导航-->
+					<div id="main-nav">
+						<div class="fun-nav clearFix">
+							<div class="fun-nav-left">
+								<!-- <a href="javascript:;" class="download">
+									                                <i></i>
+									                                <span>下载</span>
+										                        </a> -->
+								<!-- <a href="javascript:;" class="share">
+									                                <i></i>
+									                                <span>分享</span>
+										                        </a> -->
+								<!-- <a href="javascript:;" class="move">
+									                                <i></i>
+									                                <span>移动到</span>
+										                        </a> -->
+		                        <a href="javascript:;" class="rename">
+	                                <i></i>
+	                                <span>重命名</span>
+		                        </a>
+		                        <a href="javascript:;" class="delete">
+	                                <i></i>
+	                                <span>删除</span>
+		                        </a>
+		                        <a href="javascript:;" class="create">
+	                                <i></i>
+	                                <span>新建文件夹</span>
+		                        </a>
+		                        <a href="javascript:;" class="reload">
+	                                <i></i>
+		                        </a>
+							</div>
+							<div class="view-mode">
+								<a href="javascript:;" class="tree-form">
+									<i></i>
+									<span>树形菜单</span>
+								</a>
+								<a href="javascript:;" class="change-skin">
+									<input type="file" id="upload-skin">
+									<i></i>
+									<span>换肤</span>
+								</a>
+							</div>
+							
+						</div>
+					</div>
+					<!--右侧文件区域-->
+					<div id="main-con" class="clearFix">
+						<!--树形导航-->
+						<div id="tree-menu">
+	                        <!--<ul>
+	                            <li>
+	                                <h4 class="tree-node tree-off">
+	                                	<div>
+	                                		<i class="icon"></i><span>微云</span>
+	                                	</div>
+	                                </h4>
+	                                <ul>
+								        <li>
+			                                <h4 class="tree-node tree-none">
+			                                	<div>
+			                                		<i class="icon"></i><span>我的音乐</span>
+			                                	</div>
+			                                </h4>
+	                           			</li>
+	                        		</ul>
+								</li>
+	                        </ul> -->
+	                    </div>
+						<!--文件显示区域-->
+						<div id="file-show">
+	                        <!--路径条-->
+	                        <div class="path-nav-box clearFix">
+	                            <lable class="check-all"  title="全选"></lable>
+	                            <div class="path-nav">
+	                                <!--<a href="javascript:;" style="z-index:2" data-file-id="0">微云</a>
+	                                <span class="current-path" style="z-index:1" data-file-id="1">我的文档</span> -->
+	                            </div>
+	                        </div>
+	                        <!--提示上传文件-->
+	                        <div class="file-empty">
+	                            <div class="empty-wrap">
+	                                <i class="empty-img"></i>
+	                                <p class="empty-title">暂无文件</p>
+	                                <p class="empty-content">请点击左上角的“上传”按钮添加</p>
+	                            </div>
+	                        </div>
+	                        <!--文件显示区域-->
+                        	<div class="file-list ele-cont main-list-cont clearFix">
+                            	<!--<div class="item">
+									<i class="checkbox"></i>
+									<div class="fileimg">
+										<i class="filetype"></i>
+									</div>
+									<p class="filename">
+										<input type="text">
+										<span>我的音乐</span>
+									</p>
+								</div>-->
+                        	</div>
+						</div><!--fileshow的结尾--> 
+					</div><!-- main-con的结尾 -->
+				</div><!-- main的结尾 -->
+				<!-- 最近 -->
+				<div id="recent" class="main-list">
+					<div class="recent-nav main-list-nav clearFix">
+						<a href="javascript:;" class="del-all">
+							<i></i>
+							<span>清空记录</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="recent-cont  main-list-cont">
+						<div class="ele-cont">
+							
+						</div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="title">最近为空</p>
+				            <p class="content">您最近还没有操作过任何文件哦~</p>
+				        </div>
+					</div>
+					
+				</div>
+				<!-- 文档 -->
+				<div id="doc" class="main-list">
+					<div class="doc-nav main-list-nav clearFix">
+						<a href="javascript:;" class="del">
+							<i></i>
+							<span>删除</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="doc-cont main-list-cont">
+						<div class="ele-cont">
+							
+						</div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="title">暂无文档</p>
+				            <p class="content">请点击左上角的“上传”按钮添加</p>
+				        </div>
+					</div>
+				</div>
+				<!-- 图片 -->
+				<div id="pic" class="main-list">
+					<div class="pic-nav main-list-nav clearFix">
+						<a href="javascript:;" class="del">
+							<i></i>
+							<span>删除</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="pic-cont main-list-cont">
+						<div class="ele-cont">
+							
+						</div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="title">暂无图片</p>
+				            <p class="content">请点击左上角的“上传”按钮添加</p>
+				        </div>
+					</div>
+				</div>
+				<!-- 音乐 -->
+				<div id="audio" class="main-list">
+					<div class="audio-nav main-list-nav clearFix">
+						<a href="javascript:;" class="del">
+							<i></i>
+							<span>删除</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="audio-cont main-list-cont">
+						<div class="ele-cont"></div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="title">暂无音乐</p>
+				            <p class="content">请点击左上角的“上传”按钮添加</p>
+				   		</div>
+					</div>
+				</div>
+				<!-- 视频 -->
+				<div id="video" class="main-list">
+					<div class="video-nav main-list-nav clearFix">
+						<a href="javascript:;" class="del">
+							<i></i>
+							<span>删除</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="video-cont main-list-cont">
+						<div class="ele-cont"></div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="title">暂无视频</p>
+				            <p class="content">请点击左上角的“上传”按钮添加</p>
+				   		</div>
+					</div>
+				</div>
+				
+				<!-- 笔记 -->
+				<div id="note" class="main-list">
+					<div class="note-nav main-list-nav clearFix">
+						<a href="javascript:;" class="add">
+							<i></i>
+							<span>新建笔记</span>
+						</a>
+						<a href="javascript:;" class="del">
+							<i></i>
+							<span>删除</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="note-cont main-list-cont">
+						<div class="ele-cont"></div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <<!--p class="title">暂无笔记</p>
+				            <p class="content">您可以通过“新建笔记”进行添加</p>-->
+				            <p class="content">此版块功能尚未实现,敬请期待~~~</p>
+				   		</div>
+					</div>
+				</div>
+				
+
+				<!-- 剪切板 -->
+				<div id="clip" class="main-list">
+					<div class="clip-nav main-list-nav clearFix">
+						<a href="javascript:;" class="del">
+							<i></i>
+							<span>删除</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="clip-cont main-list-cont">
+						<div class="ele-cont"></div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="content">此版块功能尚未实现,敬请期待~~~</p>
+				   		</div>
+					</div>
+				</div>
+				<!-- 分享 -->
+				<div id="share" class="main-list">
+					<div class="share-nav main-list-nav clearFix">
+						<h3>分享的链接</h3>
+					</div>
+					<div class="share-cont main-list-cont">
+						<div class="ele-cont"></div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="content">把你的文件分享给朋友吧!</p>
+				   		</div>
+					</div>
+				</div>
+			
+				<!-- 回收站 -->
+				<div id="recycle" class="main-list">
+					<div class="recycle-nav main-list-nav clearFix">
+						<a href="javascript:;" class="restore">
+							<i></i>
+							<span>还原</span>
+						</a>
+						<a href="javascript:;" class="deleteall">
+							<i></i>
+							<span>清空所有</span>
+						</a>
+						<a href="javascript:;" class="reload">
+                            <i></i>
+                        </a>
+					</div>
+					<div class="recycle-cont main-list-cont">
+						<div class="ele-cont"></div>
+						<div class="empty-box">
+				            <i class="icon"></i>
+				            <p class="title">回收站为空</p>
+				            <p class="content">您可以在这里找回最近删除的文件</p>
+				   		</div>
+					</div>
+				</div>
+			
+			</div><!--content的结尾-->
+		</div><!--container的结尾-->
+		
+		<div id="move-to-tip">
+			<div id="header">
+				<h3>选择存储位置</h3>
+				<a href="javascript:;" id="close-btn">×</a>
+			</div>
+			<div id="move-cont">
+				
+				<div class="ele-box">
+		            <div class="ele-img">
+		                <i class="eletype icon-folder"></i>
+		            </div>
+	           		<span class="ele-name">111</span>
+	       		</div>
+			</div>
+			
+
+		</div>
+		<!--提醒区域-->
+		<div class="tips-box">
+            <i class="icon"></i>
+            <span class="text"></span>
+	    </div>
+	    <!--隐藏域,用来保存数字-->
+		<input type="hidden" id="getPid" value="0"/>
+		<!--框选的框-->
+		<div id="frame-box"></div>
+		<!--图片弹出层-->
+		<div id="photo-bg">
+			<img src="" alt="">
+			<div class="control-size">
+				<a href="javascript:;" class="enlarge">+</a>
+				<a href="javascript:;" class="reduce">-</a>
+			</div>
+			<div class="close"></div>
+		</div>
+		<!--音乐弹出层弹出层-->
+		<div id="song-bg">
+			<canvas width="1000" height="500" style="background:#fff;" id="cas"></canvas>
+			<div id='loading'></div>
+			<div class="close"></div>
+		</div>
+		<!--视频弹出层弹出层-->
+		<div id="video-bg">
+			<video src="" controls="controls" id="vid">
+			</video>
+			<div id='loading'></div>
+			<div class="close"></div>
+		</div>
+		<!-- 右键菜单 -->
+    	<div id="right-menu">
+    		<ul>
+    			<li>
+    				<a href="javascript:;" class="reload">刷新</a>
+    			</li>
+    			<li>
+    				<a href="javascript:;" class="delete">删除</a>
+    			</li>
+    			<li>
+    				<a href="javascript:;" class="rename">重命名</a>
+    			</li>
+    			<li>
+    				<a href="javascript:;" class="create">新建文件夹</a>
+    			</li>
+    		</ul>
+    	</div>
+    	
+    	<!--关于项目弹出层-->
+		<div id="about-project">
+			<div class="about-project-wrap">
+				<div class="pendant">
+					<img src="img/pendant.png" alt="" />
+				</div>
+				<div class="text">
+					<h4>项目作者</h4>
+					<p>
+						姓名：景黎明
+					</p>
+					<p>
+						邮箱：m15267422230@163.com
+					</p>
+					<h4>主要实现的功能:</h4>
+					<p>
+						1.新建文件夹、文件删除 、全选和单选、文件重命名、框选文件、刷新、右键菜单等，同时实现文件区域,导航,树形菜单,点击切换相呼应。
+					</p>
+					<p>
+						2.可上传上传txt、图片、音频、视频文件；
+					</p>
+					<p>
+						3.点击可预览图片、音乐和视频。点击图片可放大或缩小查看；点击音乐可播放,并使用canvas绘制了跟随播放的动态效果；点击视频时，播放当前视频;
+					</p>
+					<p>
+						4.关于左侧版块区域:“最近”动态显示最近预览的文件和上传的文件。“回收站”内容可还原或清空，其他版块对文件进行分类显示，并各自可进行删除操作。
+					</p>
+					<h4>运用知识点：</h4>
+					<p>
+						函数传参、DOM增删改、BOM右键自定义菜单、事件委托、碰撞检测、拖拽、使用正则匹配文件类型、ES6模板字符串、FileReader接口、canvas绘图等等，同时还自己封装了好多方法，比如数组去重等等。
+					</p>
+					<h4>项目不足：</h4>
+					<p>
+						由于时间较短,开发过程中并未考虑兼容性问题,请使用高版本浏览器~~
+					</p>
+					
+				</div>
+				<div class="close">☞☞</div>
+			</div>
+		</div>
+    	
+	    <script type="text/javascript" src="js/data.js"></script>
+	    <script type="text/javascript" src="js/method.js"></script>
+	    <script type="text/javascript" src="js/render.js"></script>
+	    <script type="text/javascript" src="js/main.js"></script>
+	    <script type="text/javascript" src="js/canvas.js"></script> 
+	</body>
+</html>

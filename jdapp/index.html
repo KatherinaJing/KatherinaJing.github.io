@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var iScale = 1 / window.devicePixelRatio;
+			document.write('<meta name="viewport" content="width=device-width,initial-scale='+iScale+',minimum-scale='+iScale+',maximum-scale='+iScale+',user-scalable=no"/>');
+		</script>
+		<!--动态设置html字体大小-->
+		<script>
+//		window.screen.width
+			var iWidth = document.documentElement.clientWidth;
+			document.getElementsByTagName('html')[0].style.fontSize = iWidth / 16 + 'px';
+		</script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/tool.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header>
+			<h1 class="fl">
+				<img src="img/h1bg.png" alt="" />
+			</h1>
+			<form action="" class="search_box fl">
+				<input type="text" name="search" placeholder="京东车品节200减100" class="fl" />
+				<img src="img/searchbg.jpg" alt="" />
+			</form>
+			<a href="#" class="enter fl">
+				登录
+			</a>
+		</header>
+		<!--大广告位-->
+		<div class="banner">
+			<a href="#">
+				<img src="img/headerbg.jpg" alt="" />
+			</a>
+		</div>
+		<div class="nav">
+			<a href="#">
+				<img src="img/nav1.jpg" alt="" />
+				<span>京东超市</span>
+			</a>
+			<a href="#">
+				<img src="img/nav2.jpg" alt="" />
+				<span>全球购</span>
+			</a>
+			<a href="#">
+				<img src="img/nav3.jpg" alt="" />
+				<span>充值中心</span>
+			</a>
+			<a href="#">
+				<img src="img/nav4.jpg" alt="" />
+				<span>服装城</span>
+			</a>
+			<a href="#">
+				<img src="img/nav5.jpg" alt="" />
+				<span>白拿白赚</span>
+			</a>
+			<a href="#">
+				<img src="img/nav6.jpg" alt="" />
+				<span>领券</span>
+			</a>
+			<a href="#">
+				<img src="img/nav7.jpg" alt="" />
+				<span>物流查询</span>
+			</a>
+			<a href="#">
+				<img src="img/nav8.jpg" alt="" />
+				<span>我的关注</span>
+			</a>
+		</div>
+		<!--掌上秒杀-->
+		<div class="timelimit clearFix">
+			<span class="fl">
+				<img src="img/timelimit1.jpg" alt="" />
+			</span>
+			<h2 class="fl">掌上秒杀</h2>
+			<div class="fl">
+				<img src="img/timelimit2.jpg" alt="" />
+			</div>
+			<a href="#" class="fr">
+				<span class="fl">更多秒杀</span>
+				<img src="img/timelimit3.jpg" alt="" class="fr" />					
+			</a>
+		</div>
+		<div class="tl-cont">
+			<ul class="tl-list clearFix">
+				<li>
+					<div class="tl-pic">
+						<a href="#">
+							<img src="img/tllist1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="tl-money">
+						<span class="now">¥69</span>
+						<span class="old">¥99</span>
+					</div>
+				</li>
+				<li>
+					<div class="tl-pic">
+						<a href="#">
+							<img src="img/tllist1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="tl-money">
+						<span class="now">¥69</span>
+						<span class="old">¥99</span>
+					</div>
+				</li>
+				<li>
+					<div class="tl-pic">
+						<a href="#">
+							<img src="img/tllist1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="tl-money">
+						<span class="now">¥69</span>
+						<span class="old">¥99</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!--手机 专享-->
+		<div class="phone-sales">
+			<div>
+				<a href="#">
+					<img src="img/phsa1.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/phsa2.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/phsa3.jpg" alt="" />
+				</a>
+			</div>				
+		</div>
+		<!--4个小广告-->
+		<div class="litbanner clearFix">
+			<div>
+				<a href="#">
+					<img src="img/litbanner1.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/litbanner2.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/litbanner3.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/litbanner4.jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<!--floor banner-->
+		<div class="floor-banner">
+			<div>
+				<a href="#">
+					<img src="img/flbanner1.jpg" alt="" />
+				</a>
+			</div>				
+		</div>
+		<!--特色市场-->
+		<div class="spmarket-head">
+			<h3>特色市场</h3>
+		</div>
+		<div class="special-market">
+			<div class="spmarket-left fl">
+				<div>
+					<a href="#">
+						<img src="img/spmar1.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/spmar4.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="spmarket-right fl">
+				<div>
+					<a href="#">
+						<img src="img/spmar2.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/spmar3.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/spmar5.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--floor banner-->
+		<div class="floor-banner">
+			<div>
+				<a href="#">
+					<img src="img/flbanner2.jpg" alt="" />
+				</a>
+			</div>				
+		</div>
+		<!--主题街-->
+		<div class="spmarket-head">
+			<h3>主题街</h3>
+		</div>
+		<div class="theme">
+			<div class="theme-left fl">
+				<div>
+					<a href="#">
+						<img src="img/theme1.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme2.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme3.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme4.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme5.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+			<div class="theme-right fl">
+				<div>
+					<a href="#">
+						<img src="img/theme6.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme7.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme8.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme9.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme10.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme11.jpg" alt="" />
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="img/theme12.jpg" alt="" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!--floor banner-->
+		<div class="floor-banner">
+			<div>
+				<a href="#">
+					<img src="img/flbanner3.jpg" alt="" />
+				</a>
+			</div>				
+		</div>
+		<!--品牌推荐-->
+		<div class="brand-head">
+			<h3>品牌推荐</h3>
+		</div>
+		<div class="brand">
+			<div>
+				<a href="#">
+					<img src="img/brand1.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/brand2.jpg" alt="" />
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<img src="img/brand3.jpg" alt="" />
+				</a>
+			</div>
+		</div>
+		<!--floor-banner-->
+		<div class="floor-banner">
+			<a href="#">
+				<img src="img/flbanner4.jpg" alt="" />
+			</a>
+		</div>
+		<!--guess u like-->			
+		<div class="ulike">
+			<div class="ulike-head">
+				<h3 class="fl">猜你喜欢</h3>
+				<a href="#" class="fr">
+					<span class="fl">
+						<img src="img/ulike1.jpg" alt="" />
+					</span>
+					<span class="fl text">登录后更懂你</span>
+					<span class="fr">
+						<img src="img/ulike2.jpg" alt="" />
+					</span>
+				</a>					
+			</div>
+			<ul class="ulike-list clearFix">
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+				<li>
+					<div class="pic">
+						<a href="#">
+							<img src="img/ulike3.jpg" alt="" />								
+						</a>
+					</div>
+					<div class="text">
+						<span>
+							妙洁 平底点断式垃圾袋中号3029 (45cm×50cm*3...
+						</span>
+					</div>
+					<div class="money">							
+						<span class="fl">¥13.90</span>
+						<a href="#" class="fr">看相似</a>							
+					</div>
+				</li>
+			</ul>
+		</div>
+		<footer>
+			<ul class="clearFix">
+				<li>
+					<div class="foot">
+						<a href="#">
+							<img src="img/footer1.jpg" alt="" />
+						</a>
+					</div>					
+				</li>
+				<li>
+					<div class="foot">
+						<a href="#">
+							<img src="img/footer2.jpg" alt="" />
+						</a>
+					</div>					
+				</li>
+				<li>
+					<div class="foot">
+						<a href="#">
+							<img src="img/footer3.jpg" alt="" />
+						</a>
+					</div>					
+				</li>
+				<li>
+					<div class="foot">
+						<a href="#">
+							<img src="img/footer4.jpg" alt="" />
+						</a>
+					</div>					
+				</li>
+			</ul>
+		</footer>
+	</body>
+</html>

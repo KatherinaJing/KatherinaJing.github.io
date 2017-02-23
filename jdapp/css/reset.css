@@ -1,0 +1,13 @@
+body,dl,dd,p,h1,h2,h3,h4,h5,h6{
+	margin:0;font-family: "微软雅黑";
+	}
+ol,ul{margin:0;padding:0;list-style:none;}
+a{text-decoration:none;color: #676767;}
+img{border:none;vertical-align: top;}
+table{border-collapse: collapse;}
+th,td{padding:0;}
+form{margin:0;}
+input{padding:0;margin:0;border:none;outline: none;}
+option{padding:0;}
+textarea{resize: none;}
+em,i,b{font-style: normal;}
