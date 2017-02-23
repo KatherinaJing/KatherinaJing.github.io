@@ -140,7 +140,7 @@
 
     function showDebugInfo (e) {
 
-        var type = "{Template Error}";
+        var type = "";
         var message = e.stack || '';
 
         if (message) {
