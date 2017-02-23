@@ -3,8 +3,8 @@
 	*   {
 	*       projectName: @value String            *         项目名称
 	*       projectWebsite: @value String         *         项目网址
-	*       startTime: @value String              *         项目开始时间  格式为：2016.10.09
-	*       endTime: @value String 			      *         项目结束时间  格式为：2016.10.09
+	*       startTime: @value String              *         项目开始时间  
+	*       endTime: @value String 			      *         项目结束时间  
 	*       projectExplain: @value String         *         项目说明
 	*       projectLabel: @value Array            *         项目技术标签 
 			projectThumbnail: @value String       *         缩略图地址
@@ -33,7 +33,7 @@ var projects = [
 		},{
 			projectName:"仿jQuery官网",
 			projectWebsite:"https://katherinajing.github.io/jQuery/",
-		    startTime:"2016.61.01",
+		    startTime:"2016.03.28",
 			endTime:"至今",
 			projectExplain:"响应式布局与开发，优化用户体验。",
 			projectLabel:["html","html5","css3","css"],
@@ -41,7 +41,7 @@ var projects = [
 		},{
 			projectName:"仿京东App",
 			projectWebsite:"https://katherinajing.github.io/jdapp",
-		    startTime:"2016.01.01",
+		    startTime:"2016.04.01",
 			endTime:"至今",
 			projectExplain:"实现移动端的静态页面布局",
 			projectLabel:["html","html5","css3","css"],
