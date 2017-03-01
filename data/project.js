@@ -18,7 +18,7 @@ var projects = [
 			projectWebsite:"https://katherinajing.github.io/weiyun/",
 		    startTime:"2016.12.01",
 			endTime:"至今",
-			projectExplain:"",
+			projectExplain:"实现DOM增删改、BOM右键自定义、事件委托、碰撞检测、拖拽ongoing等功能；使用正则匹配文件类型、ES6模板字符串、canvas绘图、同时还封装了如数组去重等方法。",
 			projectLabel:["html","html5","css3","css","js"],
 			projectThumbnail:"images/icon/1.png"
 		},
