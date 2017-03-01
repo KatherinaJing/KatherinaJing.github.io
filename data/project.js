@@ -14,7 +14,7 @@
 
 var projects = [
 		{
-			projectName:"独具匠心的“百度云”",
+			projectName:"独具匠心的“微云”",
 			projectWebsite:"https://katherinajing.github.io/weiyun/",
 		    startTime:"2016.12.01",
 			endTime:"至今",
