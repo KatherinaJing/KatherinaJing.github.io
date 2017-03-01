@@ -35,7 +35,7 @@ var projects = [
 			projectWebsite:"https://katherinajing.github.io/jQuery/",
 		    startTime:"2016.03.28",
 			endTime:"至今",
-			projectExplain:"响应式布局与开发，优化用户体验。",
+			projectExplain:"运用html(5)+css(3)实现响应式布局与开发，优化用户体验。",
 			projectLabel:["html","html5","css3","css"],
 			projectThumbnail:"images/icon/project-3.png"
 		},{
@@ -43,7 +43,7 @@ var projects = [
 			projectWebsite:"https://katherinajing.github.io/jdapp",
 		    startTime:"2016.04.01",
 			endTime:"至今",
-			projectExplain:"实现移动端的静态页面布局",
+			projectExplain:"运用html(5)+css(3)实现移动端的静态页面布局",
 			projectLabel:["html","html5","css3","css"],
 			projectThumbnail:"images/icon/project-4.png"
 		},{
@@ -51,7 +51,7 @@ var projects = [
 			projectWebsite:"https://katherinajing.github.io/tuniu-pc/",
 		    startTime:"2016.05.21",
 			endTime:"至今",
-			projectExplain:"实现静态页面布局，分为主页和分页。",
+			projectExplain:"运用html(5)+css(3)实现静态页面布局，分为主页和分页。",
 			projectLabel:["html","html5","css3","css"],
 			projectThumbnail:"images/icon/project.png"
 		}
