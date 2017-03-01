@@ -16,8 +16,8 @@
 
 var timeAxisArr = [
 		{
-		    startTime:"2015.06",
-			endTime:"2017.01",
+		    startTime:"2015.10",
+			endTime:"2017.02",
 			companyNam:"包之（北京）网络有限公司",
 			companyLogo:'images/icon/expre_logo4.png',
 			companyWebsite:"http://www.miaov.com",
